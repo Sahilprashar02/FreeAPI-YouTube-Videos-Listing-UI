@@ -39,5 +39,5 @@ npx serve .
 
 ## Submit
 
-- Live hosted project link
-- Public GitHub repository link
+- **Live hosted project link:** [https://free-api-you-tube-videos-listing-ui-five.vercel.app/](https://free-api-you-tube-videos-listing-ui-five.vercel.app/)
+- **Public GitHub repository link:** [https://github.com/Sahilprashar02/FreeAPI-YouTube-Videos-Listing-UI](https://github.com/Sahilprashar02/FreeAPI-YouTube-Videos-Listing-UI)
