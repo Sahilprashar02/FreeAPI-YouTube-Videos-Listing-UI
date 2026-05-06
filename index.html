@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A YouTube-style video listing UI built with the FreeAPI YouTube videos endpoint."
+    />
+    <title>FreeAPI Videos</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://api.freeapi.app" />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="FreeAPI Videos home">
+        <span class="brand-mark">▶</span>
+        <span>FreeAPI Videos</span>
+      </a>
+
+      <form class="search" id="search-form" role="search">
+        <label class="sr-only" for="search-input">Search videos</label>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Search videos"
+          autocomplete="off"
+        />
+        <button type="submit" aria-label="Search">⌕</button>
+      </form>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-label="Video list controls">
+        <div>
+          <p class="eyebrow">Web Dev Cohort 2026</p>
+          <h1>YouTube Videos Listing UI</h1>
+        </div>
+
+        <div class="stats" aria-live="polite">
+          <span id="result-count">Loading videos...</span>
+        </div>
+      </section>
+
+      <section class="layout">
+        <aside class="sidebar" aria-label="Filters">
+          <button class="filter is-active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="javascript" type="button">JavaScript</button>
+          <button class="filter" data-filter="react" type="button">React</button>
+          <button class="filter" data-filter="nextjs" type="button">Next.js</button>
+          <button class="filter" data-filter="cloud" type="button">Cloud</button>
+          <button class="filter" data-filter="coding" type="button">Coding</button>
+        </aside>
+
+        <section class="content" aria-label="Videos">
+          <div class="status-grid" id="loader" aria-label="Loading videos">
+            <article class="skeleton"></article>
+            <article class="skeleton"></article>
+            <article class="skeleton"></article>
+            <article class="skeleton"></article>
+            <article class="skeleton"></article>
+            <article class="skeleton"></article>
+          </div>
+
+          <div class="video-grid" id="video-grid"></div>
+
+          <div class="empty-state" id="empty-state" hidden>
+            <h2>No videos found</h2>
+            <p>Try a different search or filter.</p>
+          </div>
+
+          <div class="load-more-wrap">
+            <button class="load-more" id="load-more" type="button" hidden>
+              Load more
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
