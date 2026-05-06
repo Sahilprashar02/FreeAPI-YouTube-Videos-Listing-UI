@@ -1,6 +1,9 @@
 <div align="center">
-  <a href="https://github.com/sahil/freeapi-youtube-videos" target="_blank">
+  <a href="https://github.com/Sahilprashar02/FreeAPI-YouTube-Videos-Listing-UI" target="_blank">
     <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" alt="Status Completed" />
+  </a>
+  <a href="https://free-api-you-tube-videos-listing-ui-five.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge" alt="Live Demo" />
   </a>
   <a href="https://api.freeapi.app/api/v1/public/youtube/videos" target="_blank">
     <img src="https://img.shields.io/badge/API-FreeAPI-blue?style=for-the-badge" alt="FreeAPI" />
